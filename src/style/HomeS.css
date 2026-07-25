@@ -1,0 +1,146 @@
+
+
+.home {
+    width: 80%;
+    padding: 80px 0;
+    margin :auto;
+    background: #F8F7FF; 
+}
+
+.home-container {
+    width: 80%;                
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.home-content {
+    flex: 1;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    color: #2D1B69;  
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.home-content p {
+    color: #5B5B72;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+
+
+.home-btn {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 10px;
+    background: #2D1B69;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #4C1D95;
+}
+
+
+
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
+
+@media (max-width: 992px) {
+
+    .home {
+        padding: 60px 0;
+    }
+
+    .home-container {
+        width: 92%;
+        gap: 40px;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .home {
+        margin-top: 20px;
+        padding: 50px 0;
+    }
+
+    .home-container {
+        width: 95%;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .home-image {
+        justify-content: center;
+    }
+
+    .home-image img {
+        max-width: 350px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+    }
+
+    .home-btn {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .home-image img {
+        max-width: 280px;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .home-btn {
+        width: 100%;
+    }
+}
