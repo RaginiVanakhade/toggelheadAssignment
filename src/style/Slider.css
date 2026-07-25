@@ -1,6 +1,6 @@
 .slider-section {
-  width: 85%;
-  margin: 80px auto;
+  width: 80%;
+  margin: 20px auto;
   overflow: hidden;
 }
 
@@ -10,14 +10,14 @@
   transition: transform 0.8s ease-in-out;
 }
 
-/* Show 4 cards */
+
 .card {
-  flex: 0 0 calc((100% - 60px) / 4);
-  background: #0f3b63;
+  flex: 0 0 calc((100% - 40px) / 3);
+  background: #2D1B69;
   color: #fff;
   border-radius: 18px;
-  padding: 22px;
-  min-height: 220px;
+  padding: 18px;
+  min-height: 180px;
 
   display: flex;
   flex-direction: column;
@@ -25,66 +25,65 @@
 
   background-image: radial-gradient(
     circle at top right,
-    rgba(255,255,255,.08),
+    rgba(255, 255, 255, 0.08),
     transparent 60%
   );
 
-  transition: all .35s ease;
+  transition: all 0.35s ease;
 }
 
-.card:hover{
-    transform: translateY(-8px);
-    box-shadow:0 12px 25px rgba(0,0,0,.18);
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
 }
 
-.card h3{
-    font-size:22px;
-    line-height:1.4;
-    margin-bottom:15px;
-    font-weight:600;
+.card h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
-.card p{
-    font-size:15px;
-    line-height:1.7;
-    color:#e6edf5;
-    margin-bottom:25px;
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e6edf5;
+  margin-bottom: 18px;
 }
 
-/* Button alignment */
-.card button{
-    margin-top:auto;
-    align-self:flex-start;
+.card button {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
-/* Tablet */
-@media (max-width:992px){
-
-.card{
-    flex:0 0 calc((100% - 20px)/2);
+.slider-btn {
+  padding: 8px 18px;
+  font-size: 14px;
 }
 
+
+@media (max-width: 992px) {
+  .card {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
 }
 
-/* Mobile */
-@media (max-width:768px){
 
-.slider-section{
-    width:95%;
-}
+@media (max-width: 768px) {
+  .slider-section {
+    width: 95%;
+  }
 
-.card{
-    flex:0 0 100%;
-    min-height:210px;
-}
+  .card {
+    flex: 0 0 100%;
+    min-height: 170px;
+  }
 
-.card h3{
-    font-size:20px;
-}
+  .card h3 {
+    font-size: 18px;
+  }
 
-}
-
-.slider-btn{
-    padding: 10px 22px;
-    font-size: 15px;
+  .card p {
+    font-size: 13px;
+  }
 }

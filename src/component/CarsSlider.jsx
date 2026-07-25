@@ -12,14 +12,13 @@ const CardSlider = () => {
       .then((data) => setPosts(data));
   }, []);
 
-  // Auto Slide
+  
   useEffect(() => {
     if (posts.length === 0) return;
 
     const interval = setInterval(() => {
       setStart((prev) => {
-        // Since we're showing 4 cards
-        if (prev >= posts.length - 4) {
+        if (prev >= posts.length - 3) {
           return 0;
         }
         return prev + 1;
@@ -34,7 +33,7 @@ const CardSlider = () => {
       <div
         className="slider-track"
         style={{
-          transform: `translateX(-${start * 25}%)`,
+         transform: `translateX(-${start * (100 / 3)}%)`,
         }}
       >
         {posts.map((item) => (
