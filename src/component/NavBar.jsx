@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../style/NavBar.css";
 import { IoIosArrowDown } from "react-icons/io";
 import Logo from "../assets/logoLorem.avif";
+import CustomButton from "./custom/CustomBtn";
 
 const navItems = [
   {
@@ -62,9 +63,7 @@ const NavBar = () => {
 
           <span className="search-icon">🔍</span>
 
-          <button className="enroll-btn">
-            Enrolment
-          </button>
+          <CustomButton text="Enrolment"/>
         </nav>
 
 
