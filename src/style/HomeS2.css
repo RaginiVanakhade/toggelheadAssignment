@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.exam-section {
+    width: 80%;
+    padding: 50px 0;
+    background: #fff;
+    margin: auto;
+}
+
+.exam-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+
+
+.exam-heading {
+    width: 240px;
+}
+
+.exam-heading h2 {
+    color: #2D1B69;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.exam-heading p {
+    color: #6f6f6f;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+.divider {
+    width: 1px;
+    height: 120px;
+    background: #e2e2e2;
+}
+
+
+.exam-list {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.exam-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    flex: 1;
+}
+
+.exam-icon {
+    font-size: 34px;
+    color: #2D1B69;
+    flex-shrink: 0;
+}
+
+.exam-info h4 {
+    color: #2D1B69;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.exam-info p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.exam-info span {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+@media (max-width:1200px) {
+
+    .exam-container {
+        width: 90%;
+        gap: 25px;
+    }
+
+    .exam-heading h2 {
+        font-size: 30px;
+    }
+
+    .exam-list {
+        gap: 20px;
+    }
+
+    .exam-info h4 {
+        font-size: 17px;
+    }
+
+}
+
+
+@media (max-width:992px) {
+
+    .exam-container {
+        width: 92%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .exam-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .exam-card {
+        width: 100%;
+    }
+
+}
+
+
+
+@media (max-width:576px) {
+
+    .exam-container {
+        width: 95%;
+    }
+
+    .exam-heading {
+        width: 100%;
+    }
+
+    .exam-heading h2 {
+        font-size: 28px;
+    }
+
+    .exam-heading p {
+        font-size: 14px;
+    }
+
+    .exam-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .exam-card {
+        gap: 12px;
+    }
+
+    .exam-icon {
+        font-size: 30px;
+    }
+
+    .exam-info h4 {
+        font-size: 16px;
+    }
+
+    .exam-info p,
+    .exam-info span {
+        font-size: 13px;
+    }
+
+}
