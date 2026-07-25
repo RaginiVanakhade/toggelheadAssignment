@@ -186,3 +186,31 @@ body {
 
 
 }
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    transition: .3s;
+}
+
+.nav-item:hover {
+    color: #FFD700;
+}
+
+.nav-item.active {
+    color: #FFD700;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+
+.nav-item.active .arrow {
+    transform: rotate(180deg);
+}
