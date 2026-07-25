@@ -1,31 +1,51 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../style/HomeS.css";
 import HomeImg from "../assets/homeimg.webp";
 import CustomButton from "./custom/CustomBtn";
+import One from "../assets/one.jpg"
+import Two from "../assets/two.jpg"
+import Three from "../assets/three.jpg"
+
+const bgImages = [
+ One, Two, Three
+];
 
 const HomeSection = () => {
   const [showMore, setShowMore] = useState(false);
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % bgImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section className="home">
-      <div className="home-container">
+    <section
+      className="home"
+      style={{
+        backgroundImage: `url(${bgImages[current]})`,
+      }}
+    >
+      <div className="overlay"></div>
 
+      <div className="home-container">
         <div className="home-content">
           <h1>Lorem ipsum</h1>
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
             nonummy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo
-            dolores et ea rebum.
+            erat, sed diam voluptua.
           </p>
 
           {showMore && (
             <p className="more-text">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. It has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book.
+              since the 1500s.
             </p>
           )}
 
@@ -38,7 +58,6 @@ const HomeSection = () => {
         <div className="home-image">
           <img src={HomeImg} alt="Hero" />
         </div>
-
       </div>
     </section>
   );
