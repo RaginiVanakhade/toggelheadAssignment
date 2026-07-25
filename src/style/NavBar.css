@@ -1,3 +1,199 @@
-.Nav-main{
-    background-color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    width: 100%;
+    background: #163f6f;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.navbar-container {
+    max-width: 1400px;
+    width: 92%;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo img{
+    width:55px;
+    display:block;
+}
+
+
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.nav-links a{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    text-decoration:none;
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+    white-space:nowrap;
+}
+
+.nav-links a:hover{
+    color:#d6e7ff;
+}
+
+.arrow{
+    display:flex;
+    align-items:center;
+    font-size:15px;
+}
+
+.search-icon{
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.enroll-btn{
+    padding:12px 30px;
+    border:none;
+    border-radius:12px;
+    background:#fff;
+    color:#163f6f;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.enroll-btn:hover{
+    background:#ececec;
+}
+
+
+
+.menu-icon{
+    display:none;
+    color:#fff;
+    font-size:32px;
+    cursor:pointer;
+}
+
+
+@media(max-width:1200px){
+
+    .nav-links{
+        gap:20px;
+    }
+
+    .nav-links a{
+        font-size:14px;
+    }
+
+    .enroll-btn{
+        padding:10px 22px;
+    }
+
+}
+
+
+@media(max-width:992px){
+
+    .menu-icon{
+        display:block;
+    }
+
+    .nav-links{
+
+        position:fixed;
+        top:70px;
+        right:-100%;
+        width:280px;
+        height:calc(100vh - 70px);
+
+        background:#163f6f;
+
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:28px;
+        padding:35px 25px;
+
+        transition:.35s ease;
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+    .nav-links a{
+        width:100%;
+        font-size:16px;
+    }
+
+    .search-icon{
+        font-size:24px;
+    }
+
+    .enroll-btn{
+        width:100%;
+    }
+
+}
+
+
+
+@media(max-width:576px){
+
+    .navbar-container{
+        width:94%;
+        height:65px;
+    }
+
+    .logo img{
+        width:45px;
+    }
+
+    .menu-icon{
+        font-size:28px;
+    }
+
+    .nav-links{
+        top:65px;
+        width:100%;
+        height:calc(100vh - 65px);
+        padding:30px 20px;
+    }
+
+    .nav-links a{
+        font-size:15px;
+    }
+
+    .search-icon{
+        font-size:22px;
+    }
+
+    .enroll-btn{
+        font-size:15px;
+        padding:12px;
+    }
+
 }

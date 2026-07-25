@@ -1,10 +1,83 @@
-import "../style/NavBar.css"
-const NavBar = () => {
-  return (
-    <div className="Nav-main">
-      Nav
-    </div>
-  )
-}
+import { useState } from "react";
+import "../style/NavBar.css";
+import { IoIosArrowDown } from "react-icons/io";
+import Logo from "../assets/logoLorem.avif";
 
-export default NavBar
+const navItems = [
+  {
+    id: 1,
+    title: "Qualifications",
+    link: "#",
+    hasDropdown: true,
+  },
+  {
+    id: 2,
+    title: "Organizations",
+    link: "#",
+    hasDropdown: true,
+  },
+  {
+    id: 3,
+    title: "Research & Analysis",
+    link: "#",
+    hasDropdown: true,
+  },
+  {
+    id: 4,
+    title: "Lorem ipsum",
+    link: "#",
+    hasDropdown: true,
+  },
+  {
+    id: 5,
+    title: "Lorem ipsum",
+    link: "#",
+    hasDropdown: true,
+  },
+];
+
+const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <header className="navbar">
+      <div className="navbar-container">
+
+        <div className="logo">
+  <img src={Logo} alt="Logo" />
+</div>
+
+    
+        <nav className={menuOpen ? "nav-links active" : "nav-links"}>
+          {navItems.map((item) => (
+            <a href={item.link} key={item.id}>
+              {item.title}
+              {item.hasDropdown && (
+                <span className="arrow">
+                  <IoIosArrowDown />
+                </span>
+              )}
+            </a>
+          ))}
+
+          <span className="search-icon">🔍</span>
+
+          <button className="enroll-btn">
+            Enrolment
+          </button>
+        </nav>
+
+
+        <div
+          className="menu-icon"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? "✖" : "☰"}
+        </div>
+
+      </div>
+    </header>
+  );
+};
+
+export default NavBar;
