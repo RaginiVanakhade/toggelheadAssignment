@@ -10,12 +10,14 @@ body {
 
 
 .navbar {
-    width: 100%;
+   
+    width: 80%;
     background: #2D1B69;
     position: sticky;
     top: 0;
     z-index: 999;
     box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    margin:  auto;
 }
 
 .navbar-container {
@@ -137,11 +139,20 @@ body {
         color: #F8FAFC;
     }
 
+    .navbar {
+        width: 92%;
+    }
+
 }
 
 
 
 @media(max-width:576px){
+
+    .navbar {
+        width: 95%;
+        border-radius: 12px;
+    }
 
     .navbar-container{
         width:94%;
