@@ -5,6 +5,7 @@ import NavBar from './component/NavBar'
 import HomeSection from './component/HomeSection'
 import HomeSection2 from './component/custom/HomeSection2'
 import CardSlider from './component/CarsSlider'
+import StatsSection from './component/StatusSection'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <HomeSection/>
     <HomeSection2/>
     <CardSlider/>
+    <StatsSection/>
      <Routes>
       <Route path='home' element={"hello"}/>
      </Routes>
