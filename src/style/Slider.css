@@ -1,0 +1,90 @@
+.slider-section {
+  width: 85%;
+  margin: 80px auto;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Show 4 cards */
+.card {
+  flex: 0 0 calc((100% - 60px) / 4);
+  background: #0f3b63;
+  color: #fff;
+  border-radius: 18px;
+  padding: 22px;
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-image: radial-gradient(
+    circle at top right,
+    rgba(255,255,255,.08),
+    transparent 60%
+  );
+
+  transition: all .35s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+}
+
+.card h3{
+    font-size:22px;
+    line-height:1.4;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.7;
+    color:#e6edf5;
+    margin-bottom:25px;
+}
+
+/* Button alignment */
+.card button{
+    margin-top:auto;
+    align-self:flex-start;
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+.card{
+    flex:0 0 calc((100% - 20px)/2);
+}
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+.slider-section{
+    width:95%;
+}
+
+.card{
+    flex:0 0 100%;
+    min-height:210px;
+}
+
+.card h3{
+    font-size:20px;
+}
+
+}
+
+.slider-btn{
+    padding: 10px 22px;
+    font-size: 15px;
+}
