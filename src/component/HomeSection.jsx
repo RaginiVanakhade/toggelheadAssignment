@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../style/HomeS.css";
+import "../style/Home.css";
 import HomeImg from "../assets/Homeimg.webp";
 import CustomButton from "./custom/CustomBtn";
 import One from "../assets/One.jpg"
