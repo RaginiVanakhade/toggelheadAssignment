@@ -11,7 +11,7 @@ import Footer from './component/Footer'
 
 // navbar 
 import { useState, useEffect, useRef } from "react";
-import "../style/NavBar.css";
+// import "../style/NavBar.css";
 import { IoIosArrowDown } from "react-icons/io";
 import Logo from "./assets/LogoLorem.avif"
 import CustomButton from "./component/custom/CustomBtn"
