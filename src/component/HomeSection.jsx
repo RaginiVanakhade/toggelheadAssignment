@@ -1,16 +1,13 @@
 import { useState, useEffect } from "react";
 import "../style/Home.css";
 import CustomButton from "./custom/CustomBtn";
-// import HomeImg from "../assets/Homeimg.webp"
-// import One from "../assets/One.jpg"
-// import Two from "../assets/Two.jpg"
-// import Three from "../assets/Three.jpg"
+import HomeImg from "../assets/Homeimg.webp"
+import One from "../assets/One.jpg"
+import Two from "../assets/Two.jpg"
+import Three from "../assets/Three.jpg"
 
 const bgImages = [
- 
- "https://logowik.com/content/uploads/images/lorem-lorem7797.logowik.com.webp",
- "https://logowik.com/content/uploads/images/lorem-lorem7797.logowik.com.webp",
- "https://logowik.com/content/uploads/images/lorem-lorem7797.logowik.com.webp",
+ One, Two, Three
 ];
 
 const HomeSection = () => {
@@ -59,7 +56,7 @@ const HomeSection = () => {
         </div>
 
         <div className="home-image">
-          <img src="https://logowik.com/content/uploads/images/lorem-lorem7797.logowik.com.webp" alt="Hero" />
+          <img src={HomeImg} alt="Hero" />
         </div>
       </div>
     </section>

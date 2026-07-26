@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "../style/NavBar.css";
 import { IoIosArrowDown } from "react-icons/io";
-// import Logo from "../assets/LogoLorem.avif";
+import Logo from "../assets/LogoLorem.avif";
 import CustomButton from "./custom/CustomBtn";
 import MegaMenu from "./MegaMenu";
 import menuData from "../data/menuData";
@@ -71,7 +71,7 @@ const NavBar = () => {
 
     
         <div className="logo">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPmCQzmp-wKOsdloo-vASs09zHSinWa9ZWvyhQzrdtEnNfHzi1dq7ZTANM&s=10" alt="Logo" />
+          <img src={Logo} alt="Logo" />
         </div>
 
      
