@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import CustomButton from "./custom/CustomBtn";
 import MegaMenu from "./MegaMenu";
 import menuData from "../data/menuData";
-import Logo from "../assets/LogoLorem.avif"
+import Logo from "../../src/assets/LogoLorem.avif"
 
 const navItems = [
   {
