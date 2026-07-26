@@ -8,13 +8,15 @@ import CardSlider from './component/CarsSlider'
 import StatsSection from './component/StatusSection'
 import Faq from './component/Faq'
 import Footer from './component/Footer'
+
+// navbar 
 import { useState, useEffect, useRef } from "react";
 import "../style/NavBar.css";
 import { IoIosArrowDown } from "react-icons/io";
 import Logo from "../assets/LogoLorem.avif";
 import CustomButton from "./custom/CustomBtn";
-import MegaMenu from "./MegaMenu";
-import menuData from "../data/menuData";
+import MegaMenu from "./component/MegaMenu";
+import menuData from "./component/MegaMenu"
 
 
 const navItems = [
