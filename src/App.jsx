@@ -13,8 +13,8 @@ import Footer from './component/Footer'
 import { useState, useEffect, useRef } from "react";
 import "../style/NavBar.css";
 import { IoIosArrowDown } from "react-icons/io";
-import Logo from "../assets/LogoLorem.avif";
-import CustomButton from "./custom/CustomBtn";
+import Logo from "./assets/LogoLorem.avif"
+import CustomButton from "./component/custom/CustomBtn"
 import MegaMenu from "./component/MegaMenu";
 import menuData from "./component/MegaMenu"
 
