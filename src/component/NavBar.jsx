@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import "../style/NavBar.css";
 import { IoIosArrowDown } from "react-icons/io";
-import Logo from "../assets/LogoLorem.avif";
+// import Logo from "../assets/LogoLorem.avif";
 import CustomButton from "./custom/CustomBtn";
 import MegaMenu from "./MegaMenu";
 import menuData from "../data/menuData";
+import Logo from "../assets/LogoLorem.avif"
 
 const navItems = [
   {
