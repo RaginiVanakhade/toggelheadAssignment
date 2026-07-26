@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import "../style/Home.css";
-import HomeImg from "../../src/assets/Homeimg.webp";
+// import HomeImg from "../../src/assets/Homeimg.webp";
+import HomeImg from "../assets/Homeimg.webp"
 import CustomButton from "./custom/CustomBtn";
-import One from "../../src/assets/One.jpg"
-import Two from "../../src/assets/Two.jpg"
-import Three from "../../src/assets/Three.jpg"
+// import One from "../../src/assets/One.jpg"
+// import Two from "../../src/assets/Two.jpg"
+// import Three from "../../src/assets/Three.jpg"
+import One from "../assets/One.jpg"
+import Two from "../assets/Two.jpg"
+import Three from "../assets/Three.jpg"
 
 const bgImages = [
  One, Two, Three
