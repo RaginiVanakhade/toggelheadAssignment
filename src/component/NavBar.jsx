@@ -67,6 +67,7 @@ const NavBar = () => {
     <header className="navbar" ref={navRef}>
       <div className="navbar-container">
 
+
     
         <div className="logo">
           <img src={Logo} alt="Logo" />
