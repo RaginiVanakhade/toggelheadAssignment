@@ -1,17 +1,27 @@
+import MaskGroup from "../assets/Mask Group 99.svg";
 
-import MaskGroup from "../assets/Mask Group 99.svg"
 const HomeSection = () => {
   return (
     <div className="homemain">
       <div className="homeContainer">
-        <h4 className="homeHeading"></h4>
-        <p className="homePara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aliquam nesciunt? Rem beatae amet modi sint neque assumenda, iure suscipit velit reiciendis, tempore quisquam architecto quia similique cupiditate, qui nesciunt.</p>
-      <button></button>
+
+        <div className="homeContent">
+          <h4 className="homeHeading">Lorem ipsum</h4>
+
+          <p className="homePara">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque temporibus fugiat aut eveniet. Quas quaerat ducimus repellat nisi quidem assumenda, temporibus perspiciatis, voluptates asperiores ex velit aspernatur, labore voluptate.
+          </p>
+
+          <button className="btn">Know More</button>
+        </div>
+
+        <div className="homeimg">
+          <img src={MaskGroup} alt="homeimg" />
+        </div>
+
       </div>
-
-      <div><img src={MaskGroup} alt="homeimg" /></div>
     </div>
-  )
-}
+  );
+};
 
-export default HomeSection
+export default HomeSection;

@@ -5,70 +5,82 @@
 }
 
 .homemain{
-
-top: 110px;
-left: 0px;
-width: 1920px;
-height: 520px;
-background: transparent url('../assets//Rectangle\ 5274.svg') 0% 0% no-repeat padding-box;
-opacity: 1;
-}
-
-
-.homeimg{
-    /* Layout Properties */
-top: 111px;
-left: 1134px;
-width: 786px;
-height: 519px;
-/* UI Properties */
-background: transparent url('img/Mask Group 99.png') 0% 0% no-repeat padding-box;
-opacity: 1;
-}
-
-
-.homePara{
-    top: 237px;
-left: 140px;
-width: 233px;
-height: 46px;
-/* UI Properties */
-background: transparent url('img/Lorem ipsum.png') 0% 0% no-repeat padding-box;
-opacity: 1;
+    width: 100%;
+    max-width: 1920px;
+    height: 520px;
+    background: url("../assets/Rectangle 5274.svg") no-repeat center;
+    background-size: cover;
 }
 
 .homeContainer{
+    width: 100%;
+    height: 100%;
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 140px;
 }
 
-.homeHeading{
-    top: 237px;
+.homeContent{
+    width: 544px;
+}
+
+.homeHeading {
+    width: 233px;
+    height: 46px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 0.8px;
+    color: #163F73;
+
+    margin-bottom: 20px;
+}
+
+.homePara{
+  width: 544px;
+    height: 115px;
+
+    font-family: "FSAlbert", sans-serif;
+    font-size: 22px;
+    font-weight: 300;      /* Light */
+    line-height: 30px;
+    letter-spacing: 0.35px;
+    text-align: left;
+    color: #4A4A4A;        /* Use the hex shown in Figma */
+
+    margin-bottom: 30px;
+}
+
+.btn{
+    width:186px;
+    height:62px;
+    border:none;
+    cursor:pointer;
+    background:url("../assets/44.png") no-repeat center;
+    background-size:contain;
+    box-shadow:0px 1px 8px #00000029;
+}
+
+.homeimg{
+    width:786px;
+    height:519px;
+}
+
+.homeimg img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.btn{top: 442px;
 left: 140px;
-width: 233px;
-height: 46px;
-/* UI Properties */
-background: transparent url('../assets//Lorem\ ipsum.svg') 0% 0% no-repeat padding-box;
-opacity: 1;
-}
-
-.homePara {
-top: 305px;
-left: 140px;
-width: 544px;
-height: 115px;
-/* UI Properties */
-background: transparent url('../assets/ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.png') 0% 0% no-repeat padding-box;
-opacity: 1;
-}
-
-
-.btn {
-    left: 140px;
 width: 186px;
 height: 62px;
-background: transparent url('img/Path 44.png') 0% 0% no-repeat padding-box;
 box-shadow: 0px 1px 8px #00000029;
 opacity: 1;
+background-color: #12406F;
+color: #FFFFFF;
 }
-
