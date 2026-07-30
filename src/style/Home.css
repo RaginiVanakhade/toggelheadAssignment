@@ -4,217 +4,61 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
+.homemain{
+
+top: 110px;
+left: 0px;
+width: 1920px;
+height: 520px;
+background: transparent url('../assets//Rectangle\ 5274.svg') 0% 0% no-repeat padding-box;
+opacity: 1;
 }
 
 
-
-.home {
-    width: 80%;
-    margin: auto;
-    padding: 80px 0;
-    position: relative;
-    overflow: hidden;
-    background: transparent;
+.homeimg{
+    /* Layout Properties */
+top: 111px;
+left: 1134px;
+width: 786px;
+height: 519px;
+/* UI Properties */
+background: transparent url('img/Mask Group 99.png') 0% 0% no-repeat padding-box;
+opacity: 1;
 }
 
 
-.home::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background-image: inherit;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    filter: blur(5px) brightness(0.6);
-    transform: scale(1.1);
-
-    animation: zoomEffect 8s ease-in-out infinite;
-
-    z-index: 0;
+.homePara{
+    top: 237px;
+left: 140px;
+width: 233px;
+height: 46px;
+/* UI Properties */
+background: transparent url('img/Lorem ipsum.png') 0% 0% no-repeat padding-box;
+opacity: 1;
 }
 
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.35);
-    z-index: 1;
-}
-
-.home-container {
-    width: 80%;
-    max-width: 1400px;
-    margin: auto;
-
+.homeContainer{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
 
-    position: relative;
-    z-index: 2;
 }
 
-.home-content {
-    flex: 1;
+.homeHeading{
+    top: 237px;
+left: 140px;
+width: 233px;
+height: 46px;
+/* UI Properties */
+background: transparent url('../assets//Lorem\ ipsum.svg') 0% 0% no-repeat padding-box;
+opacity: 1;
 }
 
-.home-content h1 {
-    font-size: 48px;
-    color: #fff;
-    margin-bottom: 25px;
-    font-weight: 700;
+.homePara {
+top: 305px;
+left: 140px;
+width: 544px;
+height: 115px;
+/* UI Properties */
+background: transparent url('img/Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.png') 0% 0% no-repeat padding-box;
+opacity: 1;
 }
 
-.home-content p {
-    color: #f5f5f5;
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 35px;
-}
-
-.more-text {
-    color: #fff;
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
-
-.home-btn {
-    padding: 14px 32px;
-    border: none;
-    border-radius: 10px;
-    background: #2D1B69;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.home-btn:hover {
-    background: #4C1D95;
-    transform: translateY(-2px);
-}
-
-/* Right Image */
-
-.home-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.home-image img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-   
-}
-
-
-
-@keyframes zoomEffect {
-    0% {
-        transform: scale(1.1);
-    }
-    50% {
-        transform: scale(1.16);
-    }
-    100% {
-        transform: scale(1.1);
-    }
-}
-
-@keyframes floatImage {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-
-
-@media (max-width: 992px) {
-
-    .home {
-        padding: 60px 0;
-    }
-
-    .home-container {
-        width: 92%;
-        gap: 40px;
-    }
-
-    .home-content h1 {
-        font-size: 38px;
-    }
-
-    .home-content p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .home {
-        margin-top: 20px;
-        padding: 50px 0;
-    }
-
-    .home-container {
-        width: 95%;
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 35px;
-    }
-
-    .home-image {
-        justify-content: center;
-    }
-
-    .home-image img {
-        max-width: 350px;
-    }
-
-    .home-content h1 {
-        font-size: 32px;
-    }
-
-    .home-content p {
-        font-size: 15px;
-    }
-
-    .home-btn {
-        width: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .home-image img {
-        max-width: 280px;
-    }
-
-    .home-content h1 {
-        font-size: 28px;
-    }
-
-    .home-content p {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-
-    .home-btn {
-        width: 100%;
-    }
-}

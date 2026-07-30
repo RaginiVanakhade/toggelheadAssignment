@@ -9,6 +9,7 @@ import HomeSection from './component/HomeSection'
 // import Faq from './component/Faq'
 // import Footer from './component/Footer'
 import "./style/NavBar.css"
+import "./style/Home.css"
 
 function App() {
 
