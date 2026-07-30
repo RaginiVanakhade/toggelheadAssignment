@@ -58,7 +58,17 @@ left: 140px;
 width: 544px;
 height: 115px;
 /* UI Properties */
-background: transparent url('img/Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.png') 0% 0% no-repeat padding-box;
+background: transparent url('../assets/ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+
+.btn {
+    left: 140px;
+width: 186px;
+height: 62px;
+background: transparent url('img/Path 44.png') 0% 0% no-repeat padding-box;
+box-shadow: 0px 1px 8px #00000029;
 opacity: 1;
 }
 
